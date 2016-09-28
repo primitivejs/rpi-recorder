@@ -6,6 +6,7 @@ docker \
   run \
   --name=rpi-recorder \
   -d \
+  --restart always \
   --privileged \
   -v /dev/video0:/dev/video0 \
   -v /home/pirate/rpi-recorder/out:/rpi-recorder/out \
