@@ -1,7 +1,7 @@
 #!/bin/sh
 echo [RPI-RECORDER_START]
 sh stop.sh | sed "s/^/\t/"
-echo [Run]
+echo [Start]
 docker \
   run \
   --name=rpi-recorder \
